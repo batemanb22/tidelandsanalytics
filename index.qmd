@@ -8,10 +8,6 @@ format:
   html:
     include-in-header:
       - text: |
-          <style>
-            body > main > header.quarto-title-block { display: none !important; }
-            #title-block-header.quarto-title-block { display: none !important; }
-          </style>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 ---
 
