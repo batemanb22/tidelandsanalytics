@@ -1,0 +1,59 @@
+---
+title: "When Excel Stops Being Enough"
+description: "Five signs your spreadsheet workflow has outgrown its tooling — and what to do about it."
+author: "Bryan Bateman"
+date: "2026-04-20"
+categories: [excel, workflow, getting-started]
+reading-time: true
+draft: true
+---
+
+Excel is the most successful piece of analytical software ever built. It runs entire industries. It's flexible, familiar, and on every computer in your office.
+
+It also has a ceiling. And the trouble with that ceiling is that you usually don't notice you've hit it until you've been bumping against it for a while.
+
+Here are five signs your workflow has outgrown Excel — and what to consider doing about each one.
+
+## 1. The file takes more than 10 seconds to open
+
+When workbooks get big enough, you start to develop little rituals around them. Open the file, go get coffee, come back, hope it didn't crash.
+
+This is usually a sign you've crossed a few thresholds at once: too many rows, too many formulas, too many cross-sheet references, or all of the above. The fix isn't a bigger computer — it's moving the data layer somewhere designed to handle it (a database, even a small one) and using Excel for what it's good at: the last-mile interface to the data.
+
+## 2. Multiple people need to edit it at once
+
+Excel's collaboration story has improved with online versions, but for any workbook with non-trivial logic — pivot tables, complex formulas, macros — you still end up with the "who has it open?" problem, version conflicts, and the eventual "FINAL_v3_USE_THIS_ONE.xlsx".
+
+If your data needs to be edited by multiple people simultaneously and trustably, you've outgrown Excel as the system of record. The data should live somewhere else, even if Excel remains a window into it.
+
+## 3. You're copy-pasting between files every week
+
+Manual data movement is the silent killer of analytical accuracy. Every copy-paste is an opportunity for an off-by-one error, a wrong column, or a formula that didn't drag down all the way.
+
+When the same shuffle happens every week (or every day), it's a signal that the work should be a pipeline, not a routine. R, Python, or even SQL stored procedures can do this work in seconds and never make a typo.
+
+## 4. The same numbers come out different depending on who runs the report
+
+This one is subtle. You ask three people for "Q3 revenue" and get three different answers, all of which are technically defensible. They each used a slightly different filter, or rounded at different points, or pulled the data on different days.
+
+This isn't an Excel problem exactly — it's a "single source of truth" problem. But it's almost always Excel that hides it. Centralizing the calculation logic in something like SQL or R and having everyone pull from the same definition fixes this.
+
+## 5. You can't trust the formulas anymore
+
+You've inherited a workbook from someone who left. Some of the cells are hardcoded. Some are formulas. Some are formulas that *look* right but reference cells that were deleted years ago and now silently return zero.
+
+When you can't audit your own analysis, you've stopped doing analysis and started doing archaeology. This is the point where rebuilding in something more structured (a script, a notebook, a parameterized report) pays for itself within a few months.
+
+## What "moving off Excel" actually means
+
+The phrase scares people because they think it means abandoning Excel entirely. It almost never does.
+
+In practice, "moving off Excel" usually means:
+
+- The **data** lives in a database or a structured file
+- The **analysis** happens in code (R, Python, or SQL) that can be re-run identically
+- The **output** might still be Excel, or a PDF, or a dashboard — whatever the consumer prefers
+
+The end users often don't notice anything except that the numbers are now consistent and the reports show up on time.
+
+If any of those five signs above sound familiar, it might be worth a conversation about what your current workflow is costing you in time and risk. [Get in touch.](../contact.qmd)

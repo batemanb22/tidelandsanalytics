@@ -1,0 +1,97 @@
+---
+title: "Services"
+subtitle: "How we work with you."
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+---
+
+We engage with clients in whatever way fits the project — from one-off analyses to ongoing reporting partnerships.
+
+::: {.services-list}
+
+::: {.service-section}
+[]{.fa-solid .fa-database .service-section-icon}
+
+### Data infrastructure
+
+**Data collection design.** We build spreadsheets, templates, and intake forms that capture clean data the first time, so you spend less time fixing it later.
+
+**SQL development.** Custom queries, stored procedures, and views to get the right data out of your databases — whether that's SQL Server, Oracle, PostgreSQL, or something else.
+:::
+
+::: {.service-section}
+[]{.fa-solid .fa-magnifying-glass-chart .service-section-icon}
+
+### Analysis & insight
+
+**Trending and statistical analysis.** Identifying what's actually changing in your data versus normal variation, with clear explanations of what we found and why it matters.
+
+**Exploratory analysis.** When you have data but aren't sure what it's telling you, we dig in and surface the patterns worth paying attention to.
+
+**Predictive modeling.** Forecasting and risk assessment for operational data — like the 6-month impurity forecasts in our pharmaceutical dashboard.
+:::
+
+::: {.service-section}
+[]{.fa-solid .fa-chart-line .service-section-icon}
+
+### Visualization & dashboards
+
+**Interactive Shiny applications.** Custom web-based dashboards built in R/Shiny — your team explores the data themselves, with guardrails and context built in.
+
+**Excel dashboards.** When the right tool for the job is Excel, we build interactive workbooks with charts, slicers, and pivot tables.
+
+**Tableau and Power BI.** When you're already in those ecosystems, we build dashboards that fit your existing toolchain.
+:::
+
+::: {.service-section}
+[]{.fa-solid .fa-file-export .service-section-icon}
+
+### Automated reporting
+
+**Scheduled report pipelines.** R Markdown, Quarto, and Crystal Reports configurations that generate and distribute reports automatically — no manual effort, no missed deliveries.
+
+**Custom report templates.** Branded, parameterized templates that produce consistent output across departments or product lines.
+:::
+
+:::
+
+---
+
+## How engagements work
+
+::: {.process-grid}
+
+::: {.process-step}
+**1. Conversation**
+A 30-minute call to understand what you're working with and what you need. No charge, no commitment.
+:::
+
+::: {.process-step}
+**2. Scoped pilot**
+We propose a small, well-defined first deliverable so you can see how we work before committing to anything bigger.
+:::
+
+::: {.process-step}
+**3. Build**
+We deliver iteratively — early prototypes you can react to, with refinements based on your feedback.
+:::
+
+::: {.process-step}
+**4. Handoff or partnership**
+Either we hand off the finished product with documentation, or we stay engaged for ongoing support and enhancements. Your call.
+:::
+
+:::
+
+---
+
+::: {.cta-section}
+
+## Have a project in mind?
+
+[Get in touch](contact.qmd){.btn .btn-light .btn-lg}
+
+:::

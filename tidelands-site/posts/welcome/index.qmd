@@ -1,0 +1,41 @@
+---
+title: "Welcome to the Tidelands Blog"
+description: "What you'll find here, and why we're writing it."
+author: "Bryan Bateman"
+date: "2026-04-27"
+categories: [news, analytics]
+image: "thumbnail.jpg"
+reading-time: true
+---
+
+Welcome. This is the first post on the new Tidelands Analytics site, and it seems fitting to start by saying what this blog is for.
+
+## Who this is for
+
+If you work with data — even reluctantly — and you've ever thought *there has to be a better way to do this*, you're the audience.
+
+That covers a wide range of people: lab managers wrangling spreadsheets, operations leads stitching together reports the night before a meeting, IT folks who inherited a Crystal Reports server nobody documented, and analysts who'd rather be doing analysis than reformatting CSV files for the fifth time this week.
+
+## What we'll write about
+
+A few topics we plan to cover regularly:
+
+**When Excel stops being enough.** The signs that a workflow has outgrown spreadsheets — and the practical first steps to migrate without breaking everything that already works.
+
+**Walkthroughs.** Behind-the-scenes looks at how we built specific dashboards, what we'd do differently, and what we learned along the way.
+
+**Choosing the right chart for your data.** Less of a "here's a fancy visualization" post and more "here's why your stacked bar chart is lying to you."
+
+**Statistical control charting in plain English.** Why UCL and LCL aren't the same as specification limits, and what that actually means when something goes out of control.
+
+**The R/Shiny ecosystem.** Notes on tooling, packages, and patterns we find useful — and ones we've tried and abandoned.
+
+## Why we're doing this
+
+Most of our work happens behind NDAs, which means a lot of what we learn never gets shared. The blog is a way to share what we *can* share — the general principles, the public-data examples, the things we wish someone had explained to us when we were getting started.
+
+If a post here saves you a weekend or two, that's a good outcome.
+
+---
+
+*Have a topic you'd like us to cover? [Send it our way.](../contact.qmd)*

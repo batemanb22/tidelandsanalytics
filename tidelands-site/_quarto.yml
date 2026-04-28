@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Tidelands Analytics"
+  description: "Data analysis consulting — Shiny apps, dashboards, and automated reporting"
+  site-url: "https://tidelandsanalytics.com"
+  favicon: assets/favicon.png
+
+  navbar:
+    background: primary
+    logo: assets/logo.png
+    logo-href: /
+    left:
+      - href: index.qmd
+        text: Home
+      - href: apps.qmd
+        text: Portfolio
+      - href: services.qmd
+        text: Services
+      - href: blog.qmd
+        text: Blog
+      - href: contact.qmd
+        text: Contact
+
+  page-footer:
+    left: |
+      **Tidelands Analytics, LLC**
+    center: "Copyright © 2026 Tidelands Analytics. All Rights Reserved."
+    right: |
+      [(803) 236-3653](tel:8032363653)
+      [batemanb@tidelandsanalytics.com](mailto:batemanb@tidelandsanalytics.com)
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+    css: styles.css
+    toc: false
+    page-layout: full
+    grid:
+      body-width: 1100px

@@ -1,0 +1,131 @@
+---
+title: ""
+pagetitle: "Tidelands Analytics"
+page-layout: full
+toc: false
+title-block-style: none
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+---
+
+::: {.hero}
+
+::: {.hero-content}
+
+# Let the data guide you.
+
+Data analysis consulting for businesses ready to act on what their data says. We turn complex data into clear, interactive intelligence — from spreadsheets and SQL queries to Shiny dashboards and automated reports.
+
+[See our work](apps.qmd){.btn .btn-primary .btn-lg .me-2}
+[Get in touch](contact.qmd){.btn .btn-outline-light .btn-lg}
+
+:::
+
+:::
+
+::: {.section-light}
+
+## What we do
+
+::: {.grid .service-grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.service-card}
+[]{.fa-solid .fa-database .service-icon}
+
+### Data collection
+Spreadsheets, templates, and SQL queries that capture clean data the first time.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.service-card}
+[]{.fa-solid .fa-chart-line .service-icon}
+
+### Analysis & trending
+Surfacing the patterns that matter — what's changing, what's not, and what to do about it.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.service-card}
+[]{.fa-solid .fa-chart-column .service-icon}
+
+### Interactive dashboards
+Custom Shiny applications that put live data exploration in your team's hands.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.service-card}
+[]{.fa-solid .fa-file-lines .service-icon}
+
+### Automated reporting
+R Markdown, Quarto, and Crystal Reports pipelines delivered on schedule.
+:::
+:::
+
+:::
+
+:::
+
+::: {.section}
+
+## Our toolbox
+
+::: {.toolbox}
+[Excel]{.tool-badge}
+[[R](https://www.r-project.org/){.tool-badge target="_blank"}]{}
+[[Shiny](https://shiny.posit.co/){.tool-badge target="_blank"}]{}
+[[R Markdown](https://rmarkdown.rstudio.com/){.tool-badge target="_blank"}]{}
+[[Quarto](https://quarto.org/){.tool-badge target="_blank"}]{}
+[SQL]{.tool-badge}
+[Crystal Reports]{.tool-badge}
+[[Plotly](https://plotly.com/){.tool-badge target="_blank"}]{}
+[Tableau]{.tool-badge}
+:::
+
+:::
+
+::: {.section-light}
+
+## Featured work
+
+A glimpse of what we've built. [See full portfolio →](apps.qmd)
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.feature-card}
+![Pharmaceutical Release Testing Dashboard](assets/app-pharma-1.png)
+
+### Pharmaceutical Release Testing
+Predictive analysis, control charts, and risk assessment for QC laboratory workflows.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.feature-card}
+![Microbial Monitoring Dashboard](assets/app-micro-1.png)
+
+### Microbial Monitoring
+Environmental monitoring and contamination tracking across facilities and timeframes.
+:::
+:::
+
+:::
+
+:::
+
+::: {.cta-section}
+
+## Ready to see what your data is telling you?
+
+Most projects start with a 30-minute conversation. Let's find out if we're a fit.
+
+[Contact us](contact.qmd){.btn .btn-light .btn-lg}
+
+:::

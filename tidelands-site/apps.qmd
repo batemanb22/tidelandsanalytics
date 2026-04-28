@@ -1,0 +1,113 @@
+---
+title: "Portfolio"
+subtitle: "A look at the dashboards and tools we've built."
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+---
+
+Each application below is a working example built for real analytical workflows. Click through to explore the live versions.
+
+---
+
+## Pharmaceutical Release Testing Dashboard
+
+A multi-tab analytics platform for pharmaceutical QC laboratories. Combines statistical control charting, predictive forecasting, and risk-based decision support in a single workflow.
+
+::: {.app-tabs}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+![Predictive Analysis tab — 6-month impurity forecasting with risk assessment](assets/app-pharma-1.png){.app-screenshot}
+
+**Predictive Analysis**
+Forecasts upcoming results based on historical trends, with automatic risk classification.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+![Assay tab — control charts with summary statistics](assets/app-pharma-2.png){.app-screenshot}
+
+**Assay Control Charts**
+Time-series control charting with UCL/LCL limits, specification bands, and product-level statistics.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+![Distribution analysis — boxplots across products](assets/app-pharma-3.png){.app-screenshot}
+
+**Distribution Analysis**
+Comparative distributions across products and analytes, with searchable underlying data tables.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.app-cta-card}
+
+### Try it live
+
+Explore the working dashboard with sample pharmaceutical QC data.
+
+[Open Predictive Analysis →](https://tidelandsanalytics.shinyapps.io/Release_Testing_App/){.btn .btn-primary}
+
+[Open Analytical Review →](https://tidelandsanalytics.shinyapps.io/Release_Testing_App/){.btn .btn-outline-primary}
+:::
+:::
+
+:::
+
+:::
+
+**Built with:** R · Shiny · Plotly · DT · forecast
+
+---
+
+## Microbial Monitoring Dashboard
+
+Environmental monitoring platform for cleanroom and production facilities. Tracks organism counts, contamination rates, and excursion patterns across multiple buildings.
+
+::: {.app-tabs}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-7}
+![Microbial Monitoring summary — KPIs, trends, and category breakdowns](assets/app-micro-1.png){.app-screenshot}
+:::
+
+::: {.g-col-12 .g-col-md-5}
+**At a glance**
+
+- Real-time KPI cards (sample counts, contamination rates, excursion alerts)
+- Monthly trending with excursion limit overlays
+- Building-by-building comparisons
+- Top-N organism frequency analysis
+- Category-level distribution charts
+
+[Open the app →](https://tidelandsanalytics.shinyapps.io/Organism_Review/){.btn .btn-primary}
+:::
+
+:::
+
+:::
+
+**Built with:** R · Shiny · ggplot2 · Plotly · bslib
+
+---
+
+## Production Review
+
+A production monitoring dashboard for tracking manufacturing metrics and operational performance.
+
+[Open the app →](https://tidelandsanalytics.shinyapps.io/ProductionApp/){.btn .btn-outline-primary}
+
+---
+
+::: {.cta-section}
+
+## Want something like this for your data?
+
+Whether you're starting from spreadsheets or have years of data sitting in a database, we can help you turn it into something your team will actually use.
+
+[Let's talk](contact.qmd){.btn .btn-light .btn-lg}
+
+:::

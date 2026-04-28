@@ -1,0 +1,57 @@
+---
+title: "Contact"
+subtitle: "Let's talk about your data."
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+---
+
+We respond to inquiries within one business day.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+
+### Get in touch
+
+::: {.contact-item}
+[]{.fa-solid .fa-envelope .contact-icon}
+**Email**
+[batemanb@tidelandsanalytics.com](mailto:batemanb@tidelandsanalytics.com)
+:::
+
+::: {.contact-item}
+[]{.fa-solid .fa-phone .contact-icon}
+**Phone**
+[(803) 236-3653](tel:8032363653)
+:::
+
+
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+### What to include
+
+The fastest way to get a useful response is to share a bit about:
+
+- What you're trying to accomplish
+- The kind of data you're working with
+- Any tools you're already using (Excel, SQL, R, etc.)
+- Your timeline, if you have one
+
+Don't worry about getting it perfect — we'll fill in the gaps on a call.
+
+:::
+
+:::
+
+---
+
+::: {.text-center .my-5}
+
+[Email us now](mailto:batemanb@tidelandsanalytics.com){.btn .btn-primary .btn-lg}
+
+:::

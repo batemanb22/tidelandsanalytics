@@ -1,0 +1,438 @@
+/*-- scss:defaults --*/
+
+// Tidelands brand colors — coastal, professional
+$primary: #1a5490;       // Deep tidewater blue
+$secondary: #4a90b8;     // Lighter coastal blue
+$success: #5a9367;       // Marsh green accent
+$accent: #2ec4b6;        // Bright tidal teal for highlights
+$body-color: #2c3e50;
+$body-bg: #ffffff;
+$link-color: $primary;
+$dark-blue: #0f3a66;
+
+// Typography
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$headings-font-weight: 600;
+$headings-color: #1a3a5c;
+
+// Spacing
+$navbar-padding-y: 1rem;
+
+/*-- scss:rules --*/
+
+// ===== Navbar =====
+.navbar-brand img {
+  max-height: 80px;
+}
+
+.navbar {
+  padding: 0.75rem 1.5rem;
+}
+
+// ===== Hero section =====
+.hero {
+  background: linear-gradient(135deg, #0f3a66 0%, #1a5490 50%, #2c6ba8 100%);
+  color: white;
+  padding: 5rem 1.5rem 6rem;
+  margin: 0 -1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+// Hide the empty title block on the homepage so the hero sits at the top
+body > main > header.quarto-title-block:has(+ section .hero),
+.quarto-title-block:empty,
+header#title-block-header:not(:has(.title:not(:empty))) {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Specifically zero out the title area when title is blank
+.quarto-title-block .quarto-title:empty {
+  display: none;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top right, white 49%, transparent 51%);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.hero .btn-primary {
+  background-color: $accent;
+  border-color: $accent;
+  color: $dark-blue;
+  font-weight: 600;
+}
+
+.hero .btn-primary:hover {
+  background-color: lighten($accent, 5%);
+  border-color: lighten($accent, 5%);
+}
+
+.hero .btn-outline-light {
+  border-width: 2px;
+}
+
+// ===== Sections =====
+.section,
+.section-light {
+  padding: 4rem 1.5rem;
+  margin: 0 -1.5rem;
+}
+
+.section-light {
+  background-color: #f7f9fc;
+}
+
+.section h2,
+.section-light h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+// ===== Service cards (homepage) =====
+.service-grid {
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 3px solid $primary;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+  color: $primary;
+  font-size: 1.25rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.service-card p {
+  color: #5a6c7d;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: $accent;
+  margin-bottom: 0.5rem;
+}
+
+// ===== Toolbox badges =====
+.toolbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem 0.85rem;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  line-height: 2.5;
+  padding: 0 1rem;
+}
+
+.tool-badge,
+a.tool-badge {
+  background: white;
+  border: 2px solid $primary;
+  color: $primary;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.tool-badge:hover,
+a.tool-badge:hover {
+  background: $primary;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(26, 84, 144, 0.2);
+}
+
+// ===== Feature cards (homepage) =====
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid $accent;
+}
+
+.feature-card h3 {
+  color: $primary;
+  margin: 1.5rem 1.5rem 0.5rem;
+}
+
+.feature-card p {
+  color: #5a6c7d;
+  margin: 0 1.5rem 1.5rem;
+}
+
+// ===== Portfolio page app screenshots =====
+.app-screenshot {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  margin-bottom: 0.75rem;
+  border: 1px solid #e0e6ed;
+}
+
+.app-tabs {
+  margin: 2rem 0 3rem;
+}
+
+.app-tabs .grid {
+  gap: 2rem;
+}
+
+.app-cta-card {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0eef9 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 4px solid $primary;
+}
+
+.app-cta-card h3 {
+  color: $primary;
+  margin-top: 0;
+}
+
+.app-cta-card .btn {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+// ===== Services page =====
+.services-list {
+  margin: 3rem 0;
+}
+
+.service-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-left: 4px solid $primary;
+  position: relative;
+}
+
+.service-section h3 {
+  color: $primary;
+  margin-top: 0;
+}
+
+.service-section-icon {
+  font-size: 2rem;
+  color: $accent;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+// ===== Process steps =====
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.process-step {
+  background: #f7f9fc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-top: 3px solid $accent;
+}
+
+.process-step strong {
+  color: $primary;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+// ===== Contact page =====
+.contact-item {
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.contact-icon {
+  color: $accent;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  width: 30px;
+  display: inline-block;
+}
+
+// ===== CTA section =====
+.cta-section {
+  background: linear-gradient(135deg, $primary 0%, $dark-blue 100%);
+  color: white;
+  padding: 4rem 1.5rem;
+  margin: 4rem -1.5rem 0;
+  text-align: center;
+  border-radius: 0;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+}
+
+.cta-section .btn-light {
+  color: $primary;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+}
+
+// ===== Buttons =====
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:hover {
+  background-color: darken($primary, 8%);
+  border-color: darken($primary, 8%);
+}
+
+.btn-lg {
+  padding: 0.75rem 1.75rem;
+}
+
+// ===== Page titles =====
+h1.title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle,
+p.subtitle {
+  font-size: 1.35rem;
+  color: #5a6c7d;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+// ===== Blog listing =====
+.quarto-listing-default {
+  margin-top: 2rem;
+}
+
+.quarto-post {
+  border-bottom: 1px solid #e0e6ed;
+  padding: 1.5rem 0;
+}
+
+.quarto-post .listing-title a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.quarto-post .listing-title a:hover {
+  color: darken($primary, 10%);
+}
+
+// ===== Footer =====
+.footer {
+  background: #f7f9fc;
+  padding: 2.5rem 1.5rem;
+  font-size: 0.9rem;
+  border-top: 3px solid $accent;
+}
+
+// ===== Responsive =====
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .section h2,
+  .section-light h2 {
+    font-size: 1.75rem;
+  }
+
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+/* Additional polish */
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+main.content {
+  padding: 0 1.5rem;
+}
+
+/* Hide default page header on homepage since we have a hero */
+.quarto-title-block {
+  margin-bottom: 0;
+}
+
+/* Hide title block entirely when title is empty (homepage) */
+header#title-block-header.quarto-title-block.default {
+  display: none;
+}
+
+body[data-quarto-render-default-title="false"] #title-block-header,
+.page-layout-full #title-block-header:has(h1.title:empty),
+#title-block-header:not(:has(.title:not(:empty))) {
+  display: none !important;
+}
+
+/* When the page has a hero, give the main content zero top padding */
+main:has(.hero) {
+  padding-top: 0 !important;
+}
+
+/* Clean up grid spacing */
+.grid {
+  row-gap: 1.5rem;
+}
