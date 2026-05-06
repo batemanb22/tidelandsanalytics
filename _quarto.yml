@@ -8,6 +8,14 @@ website:
   site-url: "https://tidelandsanalytics.com"
   favicon: assets/favicon.png
 
+  google-analytics:
+    tracking-id: "G-E7NP2CEH42"
+    anonymize-ip: true
+
+  cookie-consent:
+    type: implied
+    style: simple
+
   navbar:
     background: primary
     logo: assets/logo.png
