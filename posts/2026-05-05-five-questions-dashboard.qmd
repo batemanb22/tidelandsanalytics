@@ -1,0 +1,46 @@
+---
+title: "Five Questions to Ask Before Building Your First Business Dashboard"
+description: "The five questions that separate dashboards people use from dashboards people abandon — a practical guide for anyone planning their first one."
+author: "Tidelands Analytics"
+date: "2026-05-05"
+categories: [dashboards, "getting started"]
+reading-time: true
+---
+
+Most dashboards die quietly. They get built with enthusiasm, demoed once, and then drift into the kind of disuse where nobody quite remembers the URL. The reason is rarely the tool — it's that nobody asked the right questions before the first chart got drawn. Here are five worth answering before yours does.
+
+## 1. Who is this dashboard actually for, and what decision will it drive?
+
+A dashboard without a specific user and a specific decision is just a wall of numbers. Generic "executive overview" dashboards — twenty KPIs squeezed onto one screen — are the canonical example: nobody's bored boss has ever changed a Tuesday because the gross-margin tile turned yellow.
+
+The fix is to name the person and the decision out loud. *"Plant manager, every morning at 6 a.m., deciding whether to escalate the previous shift's downtime."* If you can't write that sentence, you don't have a dashboard yet — you have a request for one.
+
+## 2. What does "good" look like — what numbers and thresholds matter?
+
+A number on a screen is not information. *Yesterday's output: 48,200 units* tells you nothing unless you know what you were aiming for, what triggers concern, and what triggers action. Many first dashboards stop at the first half — they show what is, but not what it means.
+
+Before building, write the thresholds down. *Green above 50,000. Yellow 47,000–50,000. Red below.* If your stakeholders can't agree on those numbers, that's the project's first deliverable — not the dashboard itself. Lock the targets, then visualize against them.
+
+## 3. Where will the data come from, and how fresh does it need to be?
+
+Freshness is where dashboards quietly fail. A monthly leadership review can run on data refreshed nightly with no harm done. A shift handoff cannot. Mismatched freshness is what produces the awkward moment when the dashboard says one thing and the operator on the floor says another — and the dashboard loses every time.
+
+Ask, for each metric: where does this number live today, who keeps it accurate, and how often does it actually change? Then match the refresh cadence to the *decision*, not to the technology. Real-time is expensive and rarely necessary; daily is usually enough; sometimes weekly is correct.
+
+## 4. Who owns it after launch — updates, fixes, additions?
+
+This is the question that gets skipped most often, and it's the one that quietly kills more dashboards than any other. The build is a project; the dashboard is an asset. Assets need owners.
+
+A common pattern to avoid: the analyst who built it leaves, an upstream system gets renamed, the dashboard breaks silently, and three months later somebody notices the numbers froze in February. Decide before launch who's responsible for the underlying queries, who handles change requests, and where the source code lives. "We'll figure that out later" is the wrong answer.
+
+## 5. How will we know it's working?
+
+A dashboard succeeds when it changes behavior — when a meeting gets shorter because everyone already saw the numbers, when a problem gets caught a day earlier, when a question stops getting asked because the answer is always one click away. Adoption isn't login counts; it's whether the dashboard shows up in the language of how decisions get made.
+
+Pick one or two success signals before you build. *"In Q3, the weekly ops meeting will reference this dashboard instead of the PDF report."* That's measurable, and it tells you something honest. If six months in nobody refers to it, the dashboard isn't working — and that's useful information, not a failure to hide from.
+
+## A short closing
+
+None of these questions are technical. That's the point. The hard parts of dashboard work are almost always upstream of the chart: figuring out who decides what, with which numbers, against which targets, supplied by whom. Get those answers right and almost any tool will do. Get them wrong and the prettiest Power BI in the world won't save you.
+
+If you're staring at a blank dashboard canvas — or a stalled one — and want a second set of eyes on these questions for your own business, [reach out](../contact.qmd). We're happy to think it through with you, no pitch attached.
